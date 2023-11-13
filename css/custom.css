@@ -1,0 +1,66 @@
+#hero {
+    background-image: url("../images/bg-hero.jpg")
+}
+
+#the-wedding-event {
+    background-image: url("../images/zeppos.jpg")
+}
+
+#proposed {
+    background-image: url("../images/bg-proposed.jpg")
+}
+
+#wedding-gifts {
+    background-image: url("../images/bg-wedding-gifts.jpg")
+}
+
+footer {
+    background-image: url("../images/bg-footer.jpg")
+}
+
+/*# sourceMappingURL=custom.min.css.map */
+@font-face {
+    font-family: elonaFont;
+    src: url(../fonts/Family.ttf);
+  }
+
+  @font-face {
+    font-family: infant;
+    src: url(../fonts/CormorantInfant-Medium.ttf);
+  }
+.elona {
+    font-family: elonaFont !important;
+    font-size:3em;
+    height:67px;
+}
+.goldfoil{
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(../images/goldfoil.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+.pink{
+    color:#CB9E91;
+}
+
+.bg-white {
+    background: #fffaf5 !important;
+}
+
+html, p, .font-alt {
+    font-family: infant !important;
+}
+
+.rounded-special {
+    border-top-left-radius: 250px;     /* rounded */
+    border-top-right-radius: 0px;    /* rounded */
+    border-bottom-right-radius: 250px;    /* not rounded */
+    border-bottom-left-radius: 250px;  /* rounded */
+}
+
+.text-right{
+    text-align:right !important;
+}
