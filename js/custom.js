@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let tiltify = new Tiltify(
-      document.querySelectorAll(".tilt"), {
-        max: 30,
-        perspective: 1000,
-        speed: 300
-      }
-    );
+    VanillaTilt.init(document.querySelector(".your-element"), {
+		max: 25,
+		speed: 400
+	});
     console.log('test');
   });
