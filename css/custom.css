@@ -149,4 +149,9 @@ html, p, .font-alt {
 }
 .navbar .nav-link{
     color: #CB9E91;
+    font-family: infant !important;
+}
+
+.navbar-nav{
+    min-width: auto !important;
 }
