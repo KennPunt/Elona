@@ -40,12 +40,19 @@ footer {
 .elona {
     font-family: elonaFont !important;
     font-size:3em;
- /*   height:67px; */
+    
+}
+
+.logo{
+    min-height:67px;
+}
+.navbar .elona{
+    margin: auto;
 }
 
 #hero .elona{
-    font-size:6em;
-    margin-top: 40px !important;
+    font-size:5em;
+    margin-top: 20px !important;
 }
 
 #hero .names {
@@ -53,10 +60,10 @@ footer {
     justify-content: space-between; /* Adjusts the spacing between items */
 }
 #hero .names p:first-child{
-    margin-left:50px;
+    margin-left:40px;
 }
 #hero .names p:last-child{
-    margin-right:50px;
+    margin-right:40px;
 }
 
 .stokjes {
@@ -83,6 +90,7 @@ text-align: center;
     text-decoration: none;
     color: #CB9E91;
     font-size: 0.8em;
+    margin-bottom:2px;
 }
 
 .goldfoil{
@@ -113,6 +121,7 @@ html, p, .font-alt {
     border-bottom-right-radius: 250px;    /* not rounded */
     border-bottom-left-radius: 250px;  /* rounded */
     min-width: 357px;
+    max-width:468px;
 }
 
 .text-right{
@@ -125,4 +134,19 @@ html, p, .font-alt {
     line-height:15px;
     margin:0;
     padding:0;
+}
+@media (min-width: 992px) {
+    #hero {
+        padding-top: 70px !important;
+    }
+}
+
+.bg-secondary{
+    background-color: #CB9E91 !important;
+}
+.navbar-toggler{
+    border:none !important;
+}
+.navbar .nav-link{
+    color: #CB9E91;
 }
