@@ -28,11 +28,63 @@ footer {
     font-family: infant;
     src: url(../fonts/CormorantInfant-Medium.ttf);
   }
+  @font-face {
+    font-family: infant;
+    src: url(../fonts/CormorantInfant-Bold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: hearts;
+    src: url(../fonts/MtfHeartDoodle-Po5E.ttf);
+  }
 .elona {
     font-family: elonaFont !important;
     font-size:3em;
-    height:67px;
+ /*   height:67px; */
 }
+
+#hero .elona{
+    font-size:6em;
+    margin-top: 40px !important;
+}
+
+#hero .names {
+    display: flex;
+    justify-content: space-between; /* Adjusts the spacing between items */
+}
+#hero .names p:first-child{
+    margin-left:50px;
+}
+#hero .names p:last-child{
+    margin-right:50px;
+}
+
+.stokjes {
+    height:100px;
+position:absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+.birthdate{
+    margin-bottom: 50px;
+    margin-top:-20px;
+}
+
+.lasttext{
+    margin-top:30px;
+}
+
+.lasttext p, .lasttext a{
+    font-family: infant;
+    text-decoration: none;
+    color: #CB9E91;
+    font-size: 0.8em;
+}
+
 .goldfoil{
     color:#c3a343;
     -webkit-text-fill-color: transparent;
@@ -45,10 +97,11 @@ footer {
 .pink{
     color:#CB9E91;
 }
-
+/*
 .bg-white {
     background: #fffaf5 !important;
 }
+*/
 
 html, p, .font-alt {
     font-family: infant !important;
@@ -59,8 +112,17 @@ html, p, .font-alt {
     border-top-right-radius: 0px;    /* rounded */
     border-bottom-right-radius: 250px;    /* not rounded */
     border-bottom-left-radius: 250px;  /* rounded */
+    min-width: 357px;
 }
 
 .text-right{
     text-align:right !important;
+}
+
+.heart{
+    font-family: hearts;
+    font-size:40px;
+    line-height:15px;
+    margin:0;
+    padding:0;
 }
