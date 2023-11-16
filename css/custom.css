@@ -157,7 +157,7 @@ html, p, .font-alt {
 }
 
 .fixed-top{
-    z-index: 2147483647 !important;
+    z-index: 2147483646 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(40px) translateY(1px);
 }
 
