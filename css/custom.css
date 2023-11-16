@@ -120,7 +120,7 @@ html, p, .font-alt {
     border-top-right-radius: 0px;    /* rounded */
     border-bottom-right-radius: 250px;    /* not rounded */
     border-bottom-left-radius: 250px;  /* rounded */
-    min-width: 357px;
+    min-width: 300px;
     max-width:468px;
 }
 
@@ -184,5 +184,11 @@ html, p, .font-alt {
      @media (max-width: 420px) {
        #hero h5 {
             font-size:1em !important;
+        }
+        #hero .names p:first-child{
+            margin-left:10px;
+        }
+        #hero .names p:last-child{
+            margin-right:10px;
         }
     }
