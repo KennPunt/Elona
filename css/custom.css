@@ -177,9 +177,7 @@ html, p, .font-alt {
         visibility: visible !important
      }
 */
-     .overflowhidden{
-        overflow:hidden;
-     }
+   
 
      @media (max-width: 420px) {
        #hero h5 {
@@ -191,4 +189,7 @@ html, p, .font-alt {
         #hero .names p:last-child{
             margin-right:10px;
         }
+        .overflowhidden{
+            overflow:hidden;
+         }
     }
