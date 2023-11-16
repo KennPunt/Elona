@@ -180,3 +180,9 @@ html, p, .font-alt {
      .overflowhidden{
         overflow:hidden;
      }
+
+     @media (max-width: 420px) {
+       #hero h5 {
+            font-size:1em !important;
+        }
+    }
