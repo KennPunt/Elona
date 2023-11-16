@@ -155,3 +155,28 @@ html, p, .font-alt {
 .navbar-nav{
     min-width: auto !important;
 }
+
+.fixed-top{
+    z-index: 2147483647 !important;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(40px) translateY(1px);
+}
+
+.preloader {
+    z-index: 2147483647 !important;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
+}
+
+.nav-link.active {
+    color: #CB9E91 !important;
+    text-decoration:underline;
+    }
+/*
+    * {
+        outline: 1px solid red !important;
+        opacity: 1 !important;
+        visibility: visible !important
+     }
+*/
+     .overflowhidden{
+        overflow:hidden;
+     }
