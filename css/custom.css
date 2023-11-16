@@ -1,8 +1,8 @@
-#hero {
+#kaartje {
     background-image: url("../images/bg-hero.jpg")
 }
 
-#the-wedding-event {
+#babyborrel {
     background-image: url("../images/zeppos.jpg")
 }
 
@@ -10,7 +10,7 @@
     background-image: url("../images/bg-proposed.jpg")
 }
 
-#wedding-gifts {
+#gifts {
     background-image: url("../images/bg-wedding-gifts.jpg")
 }
 
@@ -54,22 +54,22 @@ footer {
     margin: auto;
 }
 
-#hero .elona {
+#kaartje .elona {
     font-size: 5em;
     margin-top: 20px !important;
 }
 
-#hero .names {
+#kaartje .names {
     display: flex;
     justify-content: space-between;
     /* Adjusts the spacing between items */
 }
 
-#hero .names p:first-child {
+#kaartje .names p:first-child {
     margin-left: 40px;
 }
 
-#hero .names p:last-child {
+#kaartje .names p:last-child {
     margin-right: 40px;
 }
 
@@ -152,7 +152,7 @@ p,
 }
 
 @media (min-width: 992px) {
-    #hero {
+    #kaartje {
         padding-top: 70px !important;
     }
 }
@@ -201,15 +201,15 @@ p,
 }
 
 @media (max-width: 420px) {
-    #hero h5 {
+    #kaartje h5 {
         font-size: 1em !important;
     }
 
-    #hero .names p:first-child {
+    #kaartje .names p:first-child {
         margin-left: 10px;
     }
 
-    #hero .names p:last-child {
+    #kaartje .names p:last-child {
         margin-right: 10px;
     }
 
