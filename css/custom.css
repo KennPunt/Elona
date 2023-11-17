@@ -182,7 +182,17 @@ p,
 .preloader {
     z-index: 2147483647 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
+    background: #fffaf5 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.preloader img{
+    height: 400px;
+    margin-top:-80px;
+    margin-right:-15px;
+}
+
 
 .nav-link.active {
     color: #CB9E91 !important;
