@@ -101,8 +101,10 @@ footer {
     margin-bottom: 2px;
 }
 
-.goldfoil {
-    color: #c3a343;
+.goldfoil,
+.goldfoil a {
+    color: #E5BC6C;
+    text-decoration: none !important;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent),
         url(../images/goldfoil.jpg) repeat;
@@ -135,7 +137,7 @@ p,
     /* not rounded */
     border-bottom-left-radius: 250px;
     /* rounded */
-    min-width: 300px;
+    min-width: 270px;
     max-width: 468px;
 }
 
@@ -179,7 +181,8 @@ p,
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(40px) translateY(1px);
 }
 
-.preloader, .preloader div {
+.preloader,
+.preloader div {
     z-index: 2147483647 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
     background: #CB9E91 !important;
@@ -188,15 +191,15 @@ p,
     align-items: center;
 }
 
-.preloader .kaartje{
-    background:#fffaf5 !important;
+.preloader .kaartje {
+    background: #fffaf5 !important;
 }
 
-.preloader img{
+.preloader img {
     height: 400px;
-    
-    margin-top:-45px;
-    margin-left:-35px;
+
+    margin-top: -45px;
+    margin-left: -35px;
 }
 
 
@@ -242,49 +245,83 @@ p,
     z-index: 2147483647 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
 }
+
 .modal-backdrop {
     z-index: 2147483646 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
 }
+
 .modal-content {
-    margin-top:50px;
-    margin-bottom:50px;
-    padding:10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
 }
 
 
 .shine {
-	font-size: 3em;
-	margin: 0 auto;
-	margin-bottom: 1em;
-	font-weight: bold;
+    font-size: 3em;
+    margin: 0 auto;
+    margin-bottom: 1em;
 }
 
 .shine {
-	background: #E5BC6C -webkit-gradient(linear, left top, right top, from(#E5BC6C), to(#E5BC6C), color-stop(0.5, #fff2d8)) 0 0 no-repeat;
-	-webkit-background-size: 150px;
-	-webkit-background-clip: text;
-	-webkit-animation-name: shine;
-	-webkit-animation-duration: 5s;
+    background: #E5BC6C -webkit-gradient(linear, left top, right top, from(#E5BC6C), to(#E5BC6C), color-stop(0.5, #fff2d8)) 0 0 no-repeat;
+    -webkit-background-size: 150px;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-name: shine;
     animation-duration: 5s;
-background-size: 200px;
-background-clip: text;
-	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.1);
+    background-size: 200px;
+    background-clip: text;
+    text-shadow: 0 0px 0px rgba(255, 255, 255, 0.1);
+
+
 }
 
 @keyframes shine {
-	0%, 10% {
-		background-position: -1000px;
-	}
-	20% {
-		background-position: top left;
-	}
-	90% {
-		background-position: top right;
-	}
-	100% {
-		background-position: 1000px;
-	}
+
+    0%, 10% {
+        background-position: -1000px;
+    }
+
+    20% {
+        background-position: top left;
+    }
+
+    90% {
+        background-position: top right;
+    }
+
+    100% {
+        background-position: 1000px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+}
+
+body {
+    background: #CB9E91;
+}
+
+section {
+    background: white;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
