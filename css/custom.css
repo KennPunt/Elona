@@ -179,18 +179,24 @@ p,
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(40px) translateY(1px);
 }
 
-.preloader {
+.preloader, .preloader div {
     z-index: 2147483647 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
-    background: #fffaf5 !important;
+    background: #CB9E91 !important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.preloader .kaartje{
+    background:#fffaf5 !important;
+}
+
 .preloader img{
     height: 400px;
-    margin-top:-80px;
-    margin-right:-15px;
+    
+    margin-top:-45px;
+    margin-left:-35px;
 }
 
 
@@ -247,7 +253,7 @@ p,
 }
 
 
-.shine, .chrome {
+.shine {
 	font-size: 3em;
 	margin: 0 auto;
 	margin-bottom: 1em;
@@ -266,22 +272,6 @@ p,
 background-size: 200px;
 background-clip: text;
 	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.1);
-}
-
-.chrome {
-	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-	background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-	-webkit-background-size: 200px;
-	-webkit-background-clip: text;
-	-webkit-animation-name: shine;
-	-webkit-animation-duration: 5s;
-	-webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    animation-name: shine;
-    animation-duration: 5s;
-background-size: 200px;
-background-clip: text;
-	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes shine {
