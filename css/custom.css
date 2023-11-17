@@ -326,3 +326,17 @@ section {
     user-select: none;
 }
 
+/* to fade preloader
+.preloader {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+.preloader.d-none {
+    display:flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 1s;
+}
+*/
