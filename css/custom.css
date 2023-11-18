@@ -11,7 +11,7 @@
 }
 
 #gifts {
-    background-image: url("../images/bg-wedding-gifts.jpg")
+    background-image: url("../images/babykamer.webp")
 }
 
 footer {
@@ -244,6 +244,7 @@ p,
 .modal {
     z-index: 2147483647 !important;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(100px) translateY(0px);
+    padding-top: 20px;
 }
 
 .modal-backdrop {
@@ -282,7 +283,8 @@ p,
 
 @keyframes shine {
 
-    0%, 10% {
+    0%,
+    10% {
         background-position: -1000px;
     }
 
@@ -340,6 +342,18 @@ section {
     transition: opacity 0.5s ease, visibility 0s linear 1s;
 }
 */
-.dp-none{
+.dp-none {
     display: none;
 }
+
+footer {
+    background: #CB9E91;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+}
+
+footer img {
+    width:100px;
+    margin-bottom:5px;
+}
+
