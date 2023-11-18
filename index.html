@@ -333,6 +333,50 @@
         </div>
         <!-- //.container -->
 
+        <!-- Bank Transfer Modal Start -->
+<div id="bank-transfer-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content rounded">
+            <div class="modal-header justify-content-center">
+                <h3 class="modal-title fs-4 font-alt fw-bold text-uppercase">Pamperrekening</h3>
+                <button type="button" class="end-0 fs-3 me-3 position-absolute" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!-- //.modal-header -->
+
+            <div class="modal-body p-lg-4">
+                <p>Voor wie liever bijdraagt aan de pamperrekening, is dit mogelijk via BE82 0343 7624 4268. Echter, onthoud alsjeblieft dat jullie aanwezigheid en goede wensen ons grootste geschenk zijn. Een cadeautje is volkomen vrijblijvend - jullie gezelschap en liefde zijn al meer dan genoeg voor ons en Elona.</p>
+                
+                <!-- QR Code Placeholder -->
+                <div class="text-center">
+                    <img src="images/frame.png" alt="QR Code" class="img-fluid rounded">
+                    <p>Scan deze QR-code om direct bij te dragen aan de pamperrekening.</p>
+                </div>
+
+                <!-- Bank Details -->
+                <div>
+                    <h5>Bank Details</h5>
+                    <p>Naam: Elona Vernaillen</p>
+                    <p>Rekeningnummer: BE82034376244268</p>
+                    <p>BIC: GEBABEBBXXX</p>
+                    <p>Luierloterij! Bedankt dat je meedoet. De prijs? Eeuwige dankbaarheid.</p>
+                </div>
+            </div>
+            <!-- //.modal-body -->
+
+            <div class="modal-footer d-sm-none">
+                <button class="btn fs-9 w-100" data-bs-dismiss="modal" aria-label="Close">Okay, I get it!</button>
+            </div>
+            <!-- //.modal-footer -->
+        </div>
+        <!-- //.modal-content -->
+    </div>
+    <!-- //.modal-dialog -->
+</div>
+<!-- Bank Transfer Modal End -->
+
+
         <!-- Modal - How to Get There Start -->
         <div id="how-to-get-there-modal" class="modal fade" tabindex="-1">
             <div class="modal-dialog modal-lg">
@@ -610,10 +654,12 @@
                                     class="form-text text-muted pb-1">The date of birth as indicated on the birth
                                     announcement</small></div>
                             <div class="col-12 col-lg-12 mt-3"><button type="submit"
-                                    class="btn btn-dark btn-block">Koop iets van de lijst</button></div>
+                                    class="btn btn-dark btn-block">🍼 Koop iets van de lijst</button></div>
                         </div>
                     </form>
                     
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#bank-transfer-modal"
+                                class="btn btn-dark btn-block mt-3">💩 Stort op de pamperrekening</button>
 
                 </div>
                 <!-- //.col-md-9 -->
