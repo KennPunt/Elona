@@ -691,12 +691,12 @@
                         <div class="col-lg-7">
                            
 
-                            <form action="rsvp.php" method="post">
+                            <form id="rsvp" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSePB-mwxEKWADXVgnenOIRTgypr8mZB0FdBN7fCk0_lz45I4Q/formResponse"  method="post">
                                 <div class="row mb-3 mb-lg-4">
                                     <div class="col-md-6 mb-3 mb-lg-0">
                                         <label for="rsvp-name"
                                             class="d-block font-alt fw-bold mb-2 text-uppercase">Naam:</label>
-                                        <input type="text" name="rsvp_name" id="rsvp-name" data-rules="required"
+                                        <input type="text" name="entry.319315300" id="rsvp-name" data-rules="required" required
                                             class="border border-2 font-alt p-2 rounded text-muted w-100"
                                             placeholder="Je volledige naam">
                                     </div>
@@ -705,7 +705,7 @@
                                     <div class="col-md-6">
                                         <label for="rsvp-email"
                                             class="d-block font-alt fw-bold mb-2 text-uppercase">Email:</label>
-                                        <input type="email" name="rsvp_email" id="rsvp-email" data-rules="email"
+                                        <input type="email" name="entry.1509751281" id="rsvp-email" data-rules="email" required
                                             class="border border-2 font-alt p-2 rounded text-muted w-100"
                                             placeholder="Je Email Adres">
                                     </div>
@@ -717,11 +717,11 @@
                                     <div class="col-md-6 mb-3 mb-lg-0">
                                         <label for="rsvp-events"
                                             class="d-block font-alt fw-bold mb-2 text-uppercase">Aanwezig:</label>
-                                        <select name="rsvp_events" id="rsvp-events" data-rules="required"
+                                        <select name="entry.1100422330" id="rsvp-events" data-rules="required" required
                                             class="border border-2 font-alt p-2 rounded text-muted w-100">
                                             <option value="">- Aanwezig of niet -</option>
-                                            <option value="Aanwezig">Aanwezig op babyborrel</option>
-                                            <option value="Niet aanwezig">Aanwezig op apart bezoekje</option>
+                                            <option value="Aanwezig op de babyborrel">Aanwezig op de babyborrel</option>
+                                            <option value="Aanwezig op apart bezoekje">Aanwezig op apart bezoekje</option>
                                             <option value="Niet aanwezig">Niet aanwezig</option>
                                         </select>
                                     </div>
@@ -730,15 +730,15 @@
                                     <div class="col-md-6">
                                         <label for="rsvp-guests"
                                             class="d-block font-alt fw-bold mb-2 text-uppercase">Aantal gasten:</label>
-                                        <select name="rsvp_guests" id="rsvp-guests" data-rules="required"
+                                        <select name="entry.457297089" id="rsvp-guests" data-rules="required" required
                                             class="border border-2 font-alt p-2 rounded text-muted w-100">
                                             <option value="">- Selecteer aantal -</option>
                                             <option value="Alleen ik">Alleen ik</option>
                                             <option value="1 Gast">1 Gast</option>
-                                            <option value="2 Gast">2 Gasten</option>
-                                            <option value="3 Gast">3 Gasten</option>
-                                            <option value="4 Gast">4 Gasten</option>
-                                            <option value="5 Gast">5 Gasten</option>
+                                            <option value="2 Gasten">2 Gasten</option>
+                                            <option value="3 Gasten">3 Gasten</option>
+                                            <option value="4 Gasten">4 Gasten</option>
+                                            <option value="5 Gasten">5 Gasten</option>
                                         </select>
                                     </div>
                                     <!-- //.col-md-6 -->
@@ -749,7 +749,7 @@
                                     <div class="12">
                                         <label for="rsvp-message"
                                             class="d-block font-alt fw-bold mb-2 text-uppercase">Bijkomende informatie:</label>
-                                        <textarea name="rsvp_message" id="rsvp-message"
+                                        <textarea name="entry.1499491106" id="rsvp-message"
                                             class="border border-2 font-alt p-2 rounded text-muted w-100" rows="6"
                                             placeholder="Iets anders te melden?"></textarea>
                                     </div>
