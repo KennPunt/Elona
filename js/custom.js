@@ -5,34 +5,43 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-gastenboekform
 
-var y = document.querySelector("#rsvp");
+function disableAndUpdateForm(formId) {
+    var form = document.querySelector(formId);
+    var button = form.querySelector('button');
+    button.innerHTML = "Verstuurd!";
 
-function disableform() {
-	var b = document.querySelector('#rsvp button');
-	b.innerHTML = "Verstuurd!";
-
-	var elements = document.querySelectorAll('#rsvp input, #rsvp select, #rsvp textarea');
-	for (var i = 0; i < elements.length; i++) {
-		elements[i].disabled = true;
-	}
+    var elements = form.querySelectorAll('input, select, textarea');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].disabled = true;
+    }
 }
 
-y.addEventListener("submit", function (t) {
-	//w.validate(),
-	var b = document.querySelector('#rsvp button');
-	if(b.innerHTML == "Verstuurd!"){
-		alert("Je hebt de aanwezigheid reeds verstuurd.");
-		t.preventDefault();
-		return false;
-	}
-	this.submit();
-	disableform();
-	t.preventDefault();
-	return false;
 
+function handleFormSubmit(event, formId) {
+    var form = document.querySelector(formId);
+    var button = form.querySelector('button');
+
+    if (button.innerHTML === "Verstuurd!") {
+        alert("Je hebt het reeds verstuurd.");
+        event.preventDefault();
+        return false;
+    }
+
+    // Replace 'this.submit();' with 'form.submit();'
+    form.submit();
+    disableAndUpdateForm(formId);
+    return false;
+}
+
+document.querySelector('#rsvp').addEventListener("submit", function (event) {
+    handleFormSubmit(event, '#rsvp');
 });
+
+document.querySelector('#gastenboekform').addEventListener("submit", function (event) {
+    handleFormSubmit(event, '#gastenboekform');
+});
+
 
 /*
 document.querySelector('#rsvp').submit(function() {
