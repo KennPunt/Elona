@@ -1,3 +1,7 @@
+.invitation {
+    display: none;
+}
+
 #kaartje {
     background-image: url("../images/bg-hero.jpg")
 }
@@ -103,13 +107,18 @@ footer {
 
 .goldfoil,
 .goldfoil a {
-    color: #E5BC6C;
+    color: #BD813B;
     text-decoration: none !important;
+  
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent),
-        url(../images/goldfoil.jpg) repeat;
+        url(../images/goldfoil2.avif) repeat;
     background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
+    /*
+    background: -webkit-linear-gradient(30deg,#BD813B, #fcba6e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 }
 
 .pink {
@@ -266,7 +275,9 @@ p,
 }
 
 .shine {
-    background: #E5BC6C -webkit-gradient(linear, left top, right top, from(#E5BC6C), to(#E5BC6C), color-stop(0.5, #fff2d8)) 0 0 no-repeat;
+    background: #DCAA54 -webkit-gradient(linear, left top, right top, from(#d19149), to(#fcba6e), color-stop(0.5, #ecd0b0)) 0 0 no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     -webkit-background-size: 150px;
     -webkit-background-clip: text;
     -webkit-animation-name: shine;

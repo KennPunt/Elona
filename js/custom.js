@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-	VanillaTilt.init(document.querySelector(".your-element"), {
-		max: 25,
-		speed: 400
-	});
+    VanillaTilt.init(document.querySelector("#tiltkaartje"), {
+        max: 25,
+        speed: 400
+    });
 });
 
 
@@ -45,9 +45,9 @@ document.querySelector('#gastenboekform').addEventListener("submit", function (e
 
 /*
 document.querySelector('#rsvp').submit(function() {
-	this.submit();
-	disableFields(); // your own function
-	return false;
+    this.submit();
+    disableFields(); // your own function
+    return false;
 });
 */
 
@@ -59,5 +59,19 @@ function getQueryParam(param) {
 if (getQueryParam('invitation') === 'babyborrel') {
     history.pushState({}, '', '/invitation');
     // Code to display the invitation
-    alert("invitation");
+
+    // Select all .invitation elements and make them visible
+    var invitationElements = document.querySelectorAll('.invitation');
+    invitationElements.forEach(function (element) {
+        element.style.display = 'block';
+    });
 }
+
+// Simulate a click on the link to #babyborrel after a delay
+var linkToBabyborrel = document.getElementById('babyborrellink');
+if (linkToBabyborrel) {
+    setTimeout(function() {
+        linkToBabyborrel.click();
+    }, 3000);
+}
+
