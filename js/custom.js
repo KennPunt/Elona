@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         max: 25,
         speed: 400
     });
-});
+
 
 
 function disableAndUpdateForm(formId) {
@@ -75,3 +75,4 @@ if (linkToBabyborrel) {
     }, 3000);
 }
 
+});
