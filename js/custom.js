@@ -50,3 +50,14 @@ document.querySelector('#rsvp').submit(function() {
 	return false;
 });
 */
+
+// Function to get query parameters
+function getQueryParam(param) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+if (getQueryParam('invitation') === 'babyborrel') {
+    history.pushState({}, '', '/invitation');
+    // Code to display the invitation
+    alert("invitation");
+}
