@@ -75,4 +75,61 @@ if (linkToBabyborrel) {
     }, 3000);
 }
 
+
+
+  var sepaqr = new sepaQR({
+    charset: sepaQR.Charset.UTF_8,
+    version: '001',
+    benefName: 'Elona Vernaillen',
+    benefBIC: 'GEBABEBB',
+    benefAccNr: 'BE82034376244268',
+    /*amountEuro: 1,*/
+    remittanceInf: 'Luierloterij! Bedankt dat je meedoet. De prijs? Eeuwige dankbaarheid.',
+  });
+  console.log(sepaqr.valid());
+
+  var code = sepaqr.makeCodeInto("qrcode");
+  /*
+  if (!!code) {
+    var elem = document.getElementById("qrcodetext");
+    elem.innerHTML = sepaqr.toQRText() + "\n\n-- Stats\nlength (chars):" + sepaqr.toQRText().length + "\nModule Count (max. 69!): " + sepaqr.qrcode._oQRCode.moduleCount;
+  }*/
+
+
+  var generateQrButton = document.getElementById('generateQRButton');
+    if (generateQrButton) {
+        generateQrButton.addEventListener('click', function() {
+            // Retrieve input values
+            var amount = parseFloat(document.getElementById('pamper-amount').value);
+            var message = document.getElementById('pamper-message').value;
+            if(!amount) {
+                amount = 1;
+            }
+            // Clear the old QR code
+            var qrContainer = document.getElementById('qrcode');
+            qrContainer.innerHTML = '';
+        
+            // Generate a new QR code
+            var sepaqr = new sepaQR({
+                charset: sepaQR.Charset.UTF_8,
+                version: '001',
+                benefName: 'Elona Vernaillen',
+                benefBIC: 'GEBABEBB',
+                benefAccNr: 'BE82034376244268',
+                amountEuro: amount,
+                remittanceInf: message,
+            });
+        
+            if (sepaqr.valid()) {
+                sepaqr.makeCodeInto('qrcode');
+            } else {
+                console.error('Invalid SEPA QR Code parameters');
+            }
+        });
+    } else {
+        console.error('Button with ID "generateQrButton" not found.');
+    }
+ 
+
+
 });

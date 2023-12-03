@@ -3,23 +3,23 @@
 }
 
 #kaartje {
-    background-image: url("../images/bg-hero.jpg")
+    background-image: url("../images/bg-hero.jpg");
 }
 
 #babyborrel {
-    background-image: url("../images/zeppos.jpg")
+    background-image: url("../images/zeppos.jpg");
 }
 
 #proposed {
-    background-image: url("../images/bg-proposed.jpg")
+    background-image: url("../images/bg-proposed.jpg");
 }
 
 #gifts {
-    background-image: url("../images/babykamer.webp")
+    background-image: url("../images/babykamer.webp");
 }
 
 footer {
-    background-image: url("../images/bg-footer.jpg")
+    background-image: url("../images/bg-footer.jpg");
 }
 
 /*# sourceMappingURL=custom.min.css.map */
@@ -114,7 +114,7 @@ footer {
     background: -webkit-linear-gradient(transparent, transparent),
         url(../images/goldfoil2.avif) repeat;
     background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text; */
+    -webkit-background-clip: text; 
     /*
     background: -webkit-linear-gradient(30deg,#BD813B, #fcba6e);
   -webkit-background-clip: text;
@@ -375,4 +375,24 @@ input:user-invalid {
 input:user-invalid + span::before {
   content: "✖";
   color: red;
+}
+
+#qrcode > * {
+    margin: auto;
+}
+
+.currencyinput {
+    position: relative;
+}
+.currencyinput input {
+    padding-left:18px !important;
+}
+.currencyinput:before {
+    position: absolute;
+    top: -4px;
+    content:"€";
+    left: 5px;
+}
+#generateQRButton{
+    width:100%;
 }
