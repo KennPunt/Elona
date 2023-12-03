@@ -28,7 +28,7 @@ function handleFormSubmit(event, formId) {
         return false;
     }
 
-    // Replace 'this.submit();' with 'form.submit();'
+    event.preventDefault();
     form.submit();
     disableAndUpdateForm(formId);
     return false;
