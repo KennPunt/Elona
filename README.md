@@ -25,5 +25,4 @@ Contributions are welcome. Please adhere to standard contribution guidelines.
 This project is not licensed for commercial use. It's available for personal and non-commercial purposes only.
 
 ## Contact
-Ken Vernaillen
 - **Email**: info@digitalexpertise.be
