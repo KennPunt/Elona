@@ -86,7 +86,7 @@ if (linkToBabyborrel) {
     /*amountEuro: 1,*/
     remittanceInf: 'Luierloterij! Bedankt dat je meedoet. De prijs? Eeuwige dankbaarheid.',
   });
-  console.log(sepaqr.valid());
+  //console.log(sepaqr.valid());
 
   var code = sepaqr.makeCodeInto("qrcode");
   /*
