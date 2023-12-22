@@ -396,3 +396,17 @@ input:user-invalid + span::before {
 #generateQRButton{
     width:100%;
 }
+
+h1.storytitle{
+    font-size: calc(1.275rem + 0.3vw);
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: infant !important;
+}
