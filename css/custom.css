@@ -410,3 +410,10 @@ h1.storytitle{
     line-height: 1.2;
     font-family: infant !important;
 }
+
+.list-inline-item{
+    filter: invert(66%) sepia(29%) saturate(324%) hue-rotate(327deg) brightness(95%) contrast(90%);
+}
+.list-inline-item is-selected{
+    filter: invert(80%) sepia(72%) saturate(525%) hue-rotate(302deg) brightness(83%) contrast(88%);
+}
