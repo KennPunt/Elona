@@ -1,4 +1,5 @@
-.invitation, #photos {
+.invitation,
+#photos {
     display: none;
 }
 
@@ -105,21 +106,20 @@ footer {
     margin-bottom: 2px;
 }
 
-.goldfoil,
-.goldfoil a {
-    color: #BD813B;
-    text-decoration: none !important;
-  
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-        url(../images/goldfoil2.avif) repeat;
-    background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text; 
-    /*
-    background: -webkit-linear-gradient(30deg,#BD813B, #fcba6e);
+
+    .goldfoil,
+    .goldfoil a {
+        color: #ca9860;
+        text-decoration: none !important;
+        background: linear-gradient(transparent, transparent), url('../images/goldfoil2.avif') repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        /*     background: -webkit-linear-gradient(30deg,#BD813B, #fcba6e);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+  -webkit-text-fill-color: transparent;*/ 
+       
 }
+
 
 .pink {
     color: #CB9E91;
@@ -276,8 +276,8 @@ p,
 
 .shine {
     background: #DCAA54 -webkit-gradient(linear, left top, right top, from(#d19149), to(#fcba6e), color-stop(0.5, #ecd0b0)) 0 0 no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -webkit-background-size: 150px;
     -webkit-background-clip: text;
     -webkit-animation-name: shine;
@@ -364,40 +364,43 @@ footer {
 }
 
 footer img {
-    width:100px;
-    margin-bottom:5px;
+    width: 100px;
+    margin-bottom: 5px;
 }
 
 input:user-invalid {
-  border: 2px solid red;
+    border: 2px solid red;
 }
 
-input:user-invalid + span::before {
-  content: "✖";
-  color: red;
+input:user-invalid+span::before {
+    content: "✖";
+    color: red;
 }
 
-#qrcode > * {
+#qrcode>* {
     margin: auto;
 }
 
 .currencyinput {
     position: relative;
 }
+
 .currencyinput input {
-    padding-left:18px !important;
+    padding-left: 18px !important;
 }
+
 .currencyinput:before {
     position: absolute;
     top: -4px;
-    content:"€";
+    content: "€";
     left: 5px;
 }
-#generateQRButton{
-    width:100%;
+
+#generateQRButton {
+    width: 100%;
 }
 
-h1.storytitle{
+h1.storytitle {
     font-size: calc(1.275rem + 0.3vw);
     display: block;
     margin-block-start: 1.33em;
@@ -411,9 +414,10 @@ h1.storytitle{
     font-family: infant !important;
 }
 
-.list-inline-item{
+.list-inline-item {
     filter: invert(66%) sepia(29%) saturate(324%) hue-rotate(327deg) brightness(95%) contrast(90%);
 }
-.list-inline-item is-selected{
+
+.list-inline-item is-selected {
     filter: invert(80%) sepia(72%) saturate(525%) hue-rotate(302deg) brightness(83%) contrast(88%);
 }
