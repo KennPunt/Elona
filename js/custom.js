@@ -28,10 +28,34 @@ function handleFormSubmit(event, formId) {
         return false;
     }
 
+    if (typeof form.reportValidity === "function") {
+        if (!form.reportValidity()) {
+            event.preventDefault();
+            return false;
+        }
+    }
+
+     // Custom email validation
+     var emailInputs = form.querySelectorAll('input[type="email"]');
+     for (var i = 0; i < emailInputs.length; i++) {
+         if (!validateEmail(emailInputs[i].value)) {
+             alert("Ongeldig e-mailadres: " + emailInputs[i].value);
+             event.preventDefault();
+             return false;
+         }
+     }
+
+
     event.preventDefault();
     form.submit();
     disableAndUpdateForm(formId);
     return false;
+}
+
+// Email validation function
+function validateEmail(email) {
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
 }
 
 document.querySelector('#rsvp').addEventListener("submit", function (event) {
