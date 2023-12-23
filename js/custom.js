@@ -11,10 +11,10 @@ function disableAndUpdateForm(formId) {
     var button = form.querySelector('button');
     button.innerHTML = "Verstuurd!";
 
-    var elements = form.querySelectorAll('input, select, textarea');
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].disabled = true;
-    }
+    //var elements = form.querySelectorAll('input, select, textarea');
+    //for (var i = 0; i < elements.length; i++) {
+    //    elements[i].disabled = true;
+    //}
 }
 
 
