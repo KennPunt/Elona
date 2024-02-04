@@ -96,7 +96,7 @@ var linkToBabyborrel = document.getElementById('babyborrellink');
 if (linkToBabyborrel) {
     setTimeout(function() {
         linkToBabyborrel.click();
-    }, 3000);
+    }, 2000);
 }
 
 
