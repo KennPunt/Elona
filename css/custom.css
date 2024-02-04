@@ -4,23 +4,23 @@
 }
 
 #kaartje {
-    background-image: url("../images/bg-hero.jpg");
+    background-image: url("../images2/bg-hero.webp");
 }
 
 #babyborrel {
-    background-image: url("../images/zeppos.jpg");
+    background-image: url("../images2/zeppos.webp");
 }
 
 #proposed {
-    background-image: url("../images/bg-proposed.jpg");
+    background-image: url("../images2/bg-proposed.webp");
 }
 
 #gifts {
-    background-image: url("../images/babykamer.webp");
+    background-image: url("../images2/babykamer.webp");
 }
 
 footer {
-    background-image: url("../images/bg-footer.jpg");
+    background-image: url("../images2/bg-footer.webp");
 }
 
 /*# sourceMappingURL=custom.min.css.map */
@@ -111,7 +111,7 @@ footer {
     .goldfoil a {
         color: #ca9860;
         text-decoration: none !important;
-        background: linear-gradient(transparent, transparent), url('../images/goldfoil2.avif') repeat;
+        background: linear-gradient(transparent, transparent), url('../images2/goldfoil2.webp') repeat;
         -webkit-background-clip: text;
         background-clip: text;
         /*     background: -webkit-linear-gradient(30deg,#BD813B, #fcba6e);
